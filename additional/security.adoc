@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: additional/security.html 
+keywords:  
+summary:  
+---
+= Segurança
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+A API REST do Astra Control fornece várias camadas de segurança.
+
+
+NOTE: Todo o tráfego de rede HTTP é protegido usando o padrão do protocolo TLS (Transport Layer Security).
+
+
+
+== Tokens de API Astra
+
+Para usar a API REST do Astra Control, você deve fornecer um token de API em todas as solicitações `Authorization` no cabeçalho da solicitação. Observe o seguinte:
+
+* Você pode gerar um token de API na interface de usuário da Web Astra.
+* Um token nunca expira depois que ele é criado.
+* Você pode revogar um token a qualquer momento na interface de usuário da Web Astra.
+
+
+Consulte link:../get-started/get_api_token.html["Obtenha um token de API"] para obter mais informações.
+
+
+
+== Revogando um token de acesso à API
+
+Você pode revogar um token de API na interface da Web Astra quando não for mais necessário.
+
+.Antes de começar
+Você precisa de uma conta para o serviço Astra. Você também deve identificar os tokens que deseja revogar.
+
+.Sobre esta tarefa
+Depois que um token é revogado, ele é imediatamente e permanentemente inutilizável.
+
+.Passos
+. Faça login no Astra usando suas credenciais de conta.
++
+Acesse o seguinte site do Astra Control Service: https://astra.netapp.io/["https://astra.netapp.io"^]
+
+. Clique no ícone de figura no canto superior direito da página e selecione *Acesso à API*.
+. Selecione o token ou tokens que você deseja revogar.
+. Na caixa suspensa *ações*, clique em *revogar tokens*.
+
+
+
+
+== Funções e controle de acesso
+
+Cada usuário do Astra é atribuído a uma única função que determina as ações que podem ser executadas. As funções são organizadas em uma hierarquia conforme descrito na tabela abaixo.
+
+[cols="15,85"]
+|===
+| Função | Descrição 
+
+
+| Proprietário | Tem todas as permissões da função Admin e também pode excluir contas Astra. 
+
+
+| Administrador | Tem todas as permissões da função Membro e também pode convidar os usuários para participar de uma conta. 
+
+
+| Membro | Pode gerenciar totalmente a aplicação Astra e os recursos de computação. 
+
+
+| Visualizador | Restrito à visualização apenas de recursos. 
+|===

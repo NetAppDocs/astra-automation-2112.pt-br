@@ -1,0 +1,82 @@
+---
+indexpage:
+  title: Documentação do Astra Control Automation 21,12
+  summary: O Astra Control é um produto de software da NetApp que fornece gerenciamento
+    do ciclo de vida dos dados para suas aplicações Kubernetes. Há dois modelos de
+    implantação disponíveis, dependendo do seu ambiente. O Astra Control Center e
+    o Astra Control Service compartilham a mesma API REST para uma determinada versão.
+    Você pode usar a API e outras tecnologias de automação relacionadas para gerenciar
+    implantações do Astra Control.
+  keywords: astra, astra control, astra control center, astra control service, data
+    management, rest, rest api, kubernetes, deployment, 2112
+  lead: O Astra Control é um produto de software da NetApp que fornece gerenciamento
+    do ciclo de vida dos dados para suas aplicações Kubernetes. Há dois modelos de
+    implantação disponíveis, dependendo do seu ambiente. O Astra Control Center e
+    o Astra Control Service compartilham a mesma API REST para uma determinada versão.
+    Você pode usar a API e outras tecnologias de automação relacionadas para gerenciar
+    implantações do Astra Control.
+  tiles:
+  - title: Comece agora
+    links:
+    - title: Introdução
+      summary: Obtenha uma visão geral da API REST do Astra.
+      url: "/intro/introduction.html"
+    - title: Antes de começar
+      summary: Prepare-se para começar a usar a API REST.
+      url: "/get-started/before_get_started.html"
+    - title: Obtenha um token de API
+      summary: Gerar um token que você precisa para acessar a API.
+      url: "/get-started/get_api_token.html"
+    - title: Olá mundo
+      summary: Teste o acesso básico à API REST.
+      url: "/get-started/hello_world.html"
+  - title: Implementação REST
+    links:
+    - title: Serviços web REST
+      summary: Entenda as bases tecnológicas dos serviços web REST.
+      url: "/rest-core/rest_web_services.html"
+    - title: Detalhes HTTP
+      summary: Revise os detalhes da implementação HTTP.
+      url: "/rest-core/http_details.html"
+    - title: Formato de URL
+      summary: Entenda o formato URL e como ele é composto de vários valores.
+      url: "/rest-core/url_format.html"
+  - title: Considerações adicionais
+    links:
+    - title: Segurança
+      summary: Explore a segurança fornecida com a API REST.
+      url: "/additional/security.html"
+    - title: Trabalhando com coleções
+      summary: Use parâmetros de consulta para acessar as coleções de recursos.
+      url: "/additional/working_with_collections.html"
+    - title: Diagnóstico e suporte
+      summary: Prepare-se para dar suporte às aplicações Astra.
+      url: "/additional/diagnostics_support.html"
+  - title: Recursos
+    links:
+    - title: Recursos e coleções
+      summary: Familiarize-se com o design de recursos e coleções REST.
+      url: "/rest-core/resources_collections.html"
+    - title: Recursos da API REST do Astra Control
+      summary: Reveja uma introdução concisa aos vários recursos do Astra.
+      url: "/endpoints/resources.html"
+  - title: Fluxos de trabalho
+    links:
+    - title: Preparação
+      summary: Prepare-se para usar os workflows do Astra.
+      url: "/get-started/prepare_to_use_workflows.html"
+    - title: Workflows de infraestrutura
+      summary: Os fluxos de trabalho necessários para manter a infraestrutura de tempo
+        de execução do Astra.
+      url: "/workflows_infra/workflows_infra_before.html"
+    - title: Fluxos de trabalho de gerenciamento
+      summary: Os fluxos de trabalho comuns usados para administrar aplicações gerenciadas.
+      url: "/workflows/workflows_before.html"
+  - title: Python
+    links:
+    - title: Antes de começar
+      summary: Prepare-se para executar a amostra de scripts Python.
+      url: "/python/python_before.html"
+    - title: Liste os aplicativos gerenciados
+      summary: Execute um script de exemplo para listar os aplicativos gerenciados.
+      url: "/python/py_list_man_apps.html"

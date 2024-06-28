@@ -1,0 +1,10 @@
+---
+section: additional
+title: Considerações adicionais DE DESCANSO
+entries:
+- title: Segurança
+  url: "/additional/security.html"
+- title: Trabalhando com coleções
+  url: "/additional/working_with_collections.html"
+- title: Diagnóstico
+  url: "/additional/diagnostics_support.html"

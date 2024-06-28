@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: rn/known_issues.html 
+keywords:  
+summary:  
+---
+= Problemas conhecidos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você deve analisar todos os problemas conhecidos da versão atual relacionada à API REST do Astra Control. Os problemas conhecidos identificam problemas que podem impedi-lo de usar o produto com sucesso.
+
+
+
+== Nem todos os dispositivos de armazenamento em um nó de armazenamento de back-end são descobertos
+
+Ao emitir uma chamada de API REST para recuperar os dispositivos de storage definidos em um nó de storage, somente os dispositivos Astra Data Store são descobertos. Nem todos os dispositivos são devolvidos.
+
+
+
+== Back-end de storage Astra Data Store `Unknown` no estado
+
+O back-end de storage do Astra Data Store fica `Unknown` no estado depois de emitir uma chamada de API para recuperar o back-end de storage. Nesta condição, o back-end de armazenamento ainda está disponível e pode ser comunicado com. No entanto, um componente dentro do back-end de storage provavelmente está em um estado não saudável e precisa ser devolvido a um estado saudável para que o back-end de storage seja exibido como `Available`.
